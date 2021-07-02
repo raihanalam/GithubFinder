@@ -6,7 +6,7 @@ let ui = new UI();
 searchBtn,addEventListener('click',(e)=>{
     let userText = searchUser.value;
     if(userText != ''){
-        fetch(`https://api.github.com/users/octocat/${userText}`)
+        fetch(`https://api.github.com/users/${userText}`)
         .then(result => result.json())
         .then(data => {
             console.log(data);
