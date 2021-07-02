@@ -14,6 +14,8 @@ class UI{
                 </div>
 
                 <div class="col-md-9">
+                    <h3>${user.name}</h3>
+                    <small>${user.bio}</small><br><br>
                     <span class="badge bg-primary" >Public Repos: ${user.public_repos}</span>
                     <span class="badge bg-secondary" >Public Gitsts: ${user.public_gists}</span>
                     <span class="badge bg-success" >Followers: ${user.followers}</span>
